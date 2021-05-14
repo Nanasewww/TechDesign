@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home"
+  ],
+  "window": {
+    "defaultTitle": "My App",
+    "titleBarColor": "#566270"
+  },
+  "tabBar": {
+    "textColor": "#E0E3DA",
+    "selectedColor": "#A593E0",
+    "backgroundColor": "#566270",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "地图",
+        "icon": "src/map.png",
+        "activeIcon": "src/map_select.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "name": "我的",
+        "icon": "src/account.png",
+        "activeIcon": "src/account_select.png"
+      }
+    ]
+  }
+}

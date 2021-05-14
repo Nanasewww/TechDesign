@@ -1,0 +1,51 @@
+<view>
+  <image src="./map.jpg" mode="widthFix" style="width:100%; z-index:-2;"></image>
+  <view class="details-container" hidden="{{showBottom}}">
+    <button onTap="onButtomDetailsTap">店铺详情（一点点）</button>
+  </view>
+  <popup show="{{showDetails}}" position="bottom" onClose="onPopupClose">
+    <view class="box">
+      <view class="boxTitle">店铺详情（一点点）</view>
+      <view class="boxPic">
+        <image src="./src/yidiandian.png" mode="aspectFit" style="height:150px"></image>
+      </view>
+      <view class="boxDetails">推荐饮品：冰淇淋红茶</view>
+    </view>
+  </popup>
+
+<!--
+  <view class="buttons-container">
+    <button>到这去</button>
+    <button>去点单</button>
+  </view>
+-->
+
+  <view class="random-container" hidden="{{showRandom}}" id="shaking">
+    <button onTap="onButtomCardTap">摇一摇</button>
+  </view>
+  <popup show="{{showCard}}" position="top" onClose="onPopupClose">
+    <view class="card">
+      <view class="cardTitle">摇一摇！</view>
+      <view class="cardPic">
+        <image src="./src/milktea.jpg" mode="aspectFit" style="height:150px"></image>
+      </view>
+      <view class="boxDetails">
+        <text>Suprise！\n你摇到了茶百道的</text><text style="font-weight:bold">冰淇淋红茶</text><text>！</text>
+      </view>
+    </view>
+  </popup>
+</view>
+
+<view class="dest-check" id="tag" hidden="{{showTag}}">
+  <popover position="top" show="{{showDest}}" showMask="{{showMask}}">
+    <view class="demo-popover-btn" onTap="onShowDestTap">一点点</view>
+    <view slot="items" style="width:120px">
+      <popover-item onItemClick="itemTap1">
+        <text>到这去</text>
+      </popover-item>
+      <popover-item onItemClick="itemTap2">
+        <text>去点单</text>
+      </popover-item>
+    </view>
+  </popover>
+</view>

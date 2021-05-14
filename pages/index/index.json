@@ -1,0 +1,8 @@
+{
+ "defaultTitle": "MapPage",
+ "usingComponents": {
+   "popup": "mini-ali-ui/es/popup/index",
+   "popover": "mini-ali-ui/es/popover/index",
+   "popover-item": "mini-ali-ui/es/popover/popover-item/index"
+ }
+}

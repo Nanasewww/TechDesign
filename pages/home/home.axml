@@ -1,0 +1,19 @@
+<view style="position: relative;">
+		<list>
+			<view slot="header">
+				个人中心
+			</view>
+				<list-item>
+          我的优惠券
+				</list-item>
+        <list-item>
+          我的订单
+				</list-item>
+        <list-item>
+          我的足迹
+				</list-item>
+        <list-item>
+          个人设置
+				</list-item>
+		</list>
+</view>
